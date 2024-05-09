@@ -1,0 +1,10 @@
+C:\Users\Licenciaturas\Downloads\persona_herencia\bin\Debug\persona_herencia.exe.config
+C:\Users\Licenciaturas\Downloads\persona_herencia\bin\Debug\persona_herencia.exe
+C:\Users\Licenciaturas\Downloads\persona_herencia\bin\Debug\persona_herencia.pdb
+C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.csproj.AssemblyReference.cache
+C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.Form1.resources
+C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.Properties.Resources.resources
+C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.csproj.GenerateResource.cache
+C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.csproj.CoreCompileInputs.cache
+C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.exe
+C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.pdb
