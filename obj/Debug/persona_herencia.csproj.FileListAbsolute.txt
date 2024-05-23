@@ -8,3 +8,13 @@ C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.csp
 C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.csproj.CoreCompileInputs.cache
 C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.exe
 C:\Users\Licenciaturas\Downloads\persona_herencia\obj\Debug\persona_herencia.pdb
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\bin\Debug\persona_herencia.exe.config
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\bin\Debug\persona_herencia.exe
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\bin\Debug\persona_herencia.pdb
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.csproj.AssemblyReference.cache
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.Form1.resources
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.Properties.Resources.resources
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.csproj.GenerateResource.cache
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.csproj.CoreCompileInputs.cache
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.exe
+C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.pdb

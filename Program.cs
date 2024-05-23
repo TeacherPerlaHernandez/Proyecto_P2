@@ -55,7 +55,7 @@ namespace persona_herencia
                                     //de la caja de texto
             set { carrera = value; }//lo guardamos en memoria
         }
-        public Alumno(string carrera, int matricula)
+        public Alumno(string nombre, int edad, string fechanac, string carrera, int matricula)
         {
             Nombre = nombre;
             Edad = edad;
@@ -83,7 +83,7 @@ namespace persona_herencia
             set { puesto = value; }//lo guardamos en memoria
         }
 
-        public Empleado(string puesto, float sueldo)
+        public Empleado(string nombre, int edad, string fechanac, string puesto, float sueldo)
         {
             Nombre = nombre;
             Edad = edad;
@@ -109,7 +109,7 @@ namespace persona_herencia
                                    //de la caja de texto
             set { puesto = value; }//lo guardamos en memoria
         }
-        public Docente(string puesto, float sueldo)
+        public Docente(string nombre, int edad, string fechanac, string puesto, float sueldo)
         {
             Nombre = nombre;
             Edad = edad;
