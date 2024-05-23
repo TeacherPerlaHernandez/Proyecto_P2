@@ -224,6 +224,7 @@ namespace persona_herencia
             this.validar.TabIndex = 3;
             this.validar.Text = "VALIDAR";
             this.validar.UseVisualStyleBackColor = true;
+            this.validar.Click += new System.EventHandler(this.validar_Click);
             // 
             // radioButton3
             // 
