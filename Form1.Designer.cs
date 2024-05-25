@@ -46,12 +46,12 @@ namespace persona_herencia
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.validar = new System.Windows.Forms.Button();
             this.radiodocente = new System.Windows.Forms.RadioButton();
             this.radioalumno = new System.Windows.Forms.RadioButton();
             this.radioempleado = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,6 +89,7 @@ namespace persona_herencia
             this.Salir.TabIndex = 13;
             this.Salir.Text = "Salir";
             this.Salir.UseVisualStyleBackColor = true;
+            this.Salir.Click += new System.EventHandler(this.Salir_Click_1);
             // 
             // limpiar
             // 
@@ -98,6 +99,7 @@ namespace persona_herencia
             this.limpiar.TabIndex = 12;
             this.limpiar.Text = "Limpiar";
             this.limpiar.UseVisualStyleBackColor = true;
+            this.limpiar.Click += new System.EventHandler(this.limpiar_Click);
             // 
             // guardar
             // 
@@ -107,6 +109,7 @@ namespace persona_herencia
             this.guardar.TabIndex = 4;
             this.guardar.Text = "Guardar";
             this.guardar.UseVisualStyleBackColor = true;
+            this.guardar.Click += new System.EventHandler(this.guardar_Click);
             // 
             // textBox6
             // 
@@ -217,6 +220,18 @@ namespace persona_herencia
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(7, 12);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(106, 17);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Soy una Persona";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
             // validar
             // 
             this.validar.Location = new System.Drawing.Point(7, 104);
@@ -258,30 +273,22 @@ namespace persona_herencia
             this.radioempleado.Name = "radioempleado";
             this.radioempleado.Size = new System.Drawing.Size(107, 17);
             this.radioempleado.TabIndex = 0;
-            this.radioempleado.TabStop = true;
             this.radioempleado.Text = "Soy un empleado";
             this.radioempleado.UseVisualStyleBackColor = true;
             this.radioempleado.CheckedChanged += new System.EventHandler(this.radioempleado_CheckedChanged);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.BackgroundImage = global::persona_herencia.Properties.Resources.grupo;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.InitialImage = global::persona_herencia.Properties.Resources.grupo;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(159, 140);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 12);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(106, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Soy una Persona";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // Form1
             // 
@@ -293,6 +300,7 @@ namespace persona_herencia
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
