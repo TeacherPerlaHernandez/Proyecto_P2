@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace persona_herencia
 {
@@ -30,6 +31,7 @@ namespace persona_herencia
                 int mat = Convert.ToInt32(textBox4.Text);
                 string carrera = textBox5.Text;
                 Alumno alumno = new Alumno(nom,edad,fech,carrera,mat);
+               alumno.Guardar_info();
             }
             else
             {
@@ -42,7 +44,7 @@ namespace persona_herencia
                     int mat = Convert.ToInt32(textBox4.Text);
                     string puesto = textBox5.Text;
                     float sueldo = Convert.ToSingle(textBox6.Text);
-                    Empleado empleado = new Empleado(nom, edad, fech, puesto, sueldo);
+                    Empleado empleado = new Empleado(nom, edad, fech,mat, puesto, sueldo);
                 }
                 else if (radiodocente.Checked)
                 {
@@ -52,7 +54,7 @@ namespace persona_herencia
                     int mat = Convert.ToInt32(textBox4.Text);
                     string puesto = textBox5.Text;
                     float sueldo = Convert.ToSingle(textBox6.Text);
-                    Docente docente = new Docente(nom, edad, fech, puesto, sueldo);
+                    Docente docente = new Docente(nom, edad, fech, mat, puesto, sueldo);
                 }
                 else
                 {
@@ -65,15 +67,19 @@ namespace persona_herencia
 
         private void radioalumno_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "D:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\trabajando.png";
+            string rutaImagen = "E:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\trabajando.png";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+            label4.Visible = true;
+            textBox4.Visible = true;
+            textBox5.Visible = true;
+            label5.Visible = true;
             label6.Visible = false;
             textBox6.Visible = false;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "D:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\grupo.png";
+            string rutaImagen = "E:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\grupo.png";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label4.Visible = false;
             textBox4.Visible = false;
@@ -86,7 +92,7 @@ namespace persona_herencia
         private void radioempleado_CheckedChanged(object sender, EventArgs e)
         {
 
-            string rutaImagen = "D:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\datos-del-usuario.png";
+            string rutaImagen = "E:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\datos-del-usuario.png";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label4.Visible = true;
             textBox4.Visible = true;
@@ -98,7 +104,7 @@ namespace persona_herencia
 
         private void radiodocente_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "D:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\administrador.png";
+            string rutaImagen = "E:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\administrador.png";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             label4.Visible = true;
             textBox4.Visible = true;
@@ -110,8 +116,12 @@ namespace persona_herencia
 
         private void Salir_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
-           
+            if (MessageBox.Show("¿Deseas salir de la aplicación?", "Aviso",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            
         }
 
         private void limpiar_Click(object sender, EventArgs e)
@@ -129,19 +139,54 @@ namespace persona_herencia
             if (radioalumno.Checked)
             {
                 MessageBox.Show("DATOS GUARDOS" + "\nNombre: " + textBox1.Text + "\nFecha de Nac: " + textBox2.Text
-                + "\nEdad: " + textBox3.Text + "\nMatricula: " + textBox4.Text + "\nCarrera: " + textBox5.Text);
+                + "\nEdad: " + textBox3.Text + "\nMatricula: " + textBox4.Text + "\nCarrera: " + textBox5.Text, "Datos de alumno",
+                MessageBoxButtons.OK,MessageBoxIcon.Information);
+                //uso los paramatros del constructor
+                string nom = textBox1.Text;
+                string fech = textBox2.Text;
+                int edad = Convert.ToInt32(textBox3.Text);
+                int mat = Convert.ToInt32(textBox4.Text);
+                string carrera = textBox5.Text;
+                //creo un objeto alumno con los datos
+                Alumno alumno = new Alumno(nom, edad, fech, carrera, mat);
+                //guardo los datos en el archivo txt
+                alumno.Guardar_info();
             }
             else
             {
                 if (radiodocente.Checked || radioempleado.Checked)
                 {
                     MessageBox.Show("DATOS GUARDOS" + "\nNombre: " + textBox1.Text + "\nFecha de Nac: " + textBox2.Text
-              + "\nEdad: " + textBox3.Text + "\nDNI: " + textBox4.Text + "\nPuesto: " + textBox5.Text + "\nSueldo: " + textBox6.Text);
+              + "\nEdad: " + textBox3.Text + "\nDNI: " + textBox4.Text + "\nPuesto: " + textBox5.Text + "\nSueldo: " + textBox6.Text, "Datos",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(radioempleado.Checked)
+                    {
+                        string nom = textBox1.Text;
+                        string fech = textBox2.Text;
+                        int edad = Convert.ToInt32(textBox3.Text);
+                        int mat = Convert.ToInt32(textBox4.Text);
+                        string puesto = textBox5.Text;
+                        float sueldo = Convert.ToSingle(textBox6.Text);
+                        Empleado empleado = new Empleado(nom, edad, fech, mat, puesto, sueldo);
+                        empleado.Guardar_info();
+                    }
+                    else
+                    {
+                        string nom = textBox1.Text;
+                        string fech = textBox2.Text;
+                        int edad = Convert.ToInt32(textBox3.Text);
+                        int mat = Convert.ToInt32(textBox4.Text);
+                        string puesto = textBox5.Text;
+                        float sueldo = Convert.ToSingle(textBox6.Text);
+                        Docente docente = new Docente(nom, edad, fech, mat,puesto, sueldo);
+                        docente.Guardar_info();
+                    }
                 }
                 else
                 {
                     MessageBox.Show("DATOS GUARDOS" + "\nNombre: " + textBox1.Text + "\nFecha de Nac: " + textBox2.Text
-               + "\nEdad: " + textBox3.Text);
+               + "\nEdad: " + textBox3.Text, "Datos de persona", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
                 }
 
             }
@@ -149,7 +194,7 @@ namespace persona_herencia
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string rutaImagen = "D:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\grupo.png";
+            string rutaImagen = "E:\\Ejercicios POO\\Proyecto_P2-main\\Proyecto_P2-main\\imagenes\\grupo.png";
             pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
             radioalumno.Checked = false;
             radioButton1.Checked= false;

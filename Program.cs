@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;//BIBLIOTECA QUE PERMITE USAR EL BUFFER DE ESCRITURA Y LECTURA
 
 namespace persona_herencia
 {
@@ -64,12 +65,42 @@ namespace persona_herencia
             Matricula = matricula;
         }
 
+         public void Guardar_info()
+          {
+            try //EXCEPCIÓN
+            {
+                string fileName = 
+                    @"E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\archivostxt\RegistroAlumnos.txt";
+                // esto inserta texto en un archivo existente, si el archivo no existe lo crea
+                StreamWriter writer = File.AppendText(fileName);
+                //  writer.WriteLine("Este es un dato nuevo desde guardar");
+                writer.WriteLine("Nombre: "+ Nombre);
+                writer.WriteLine("Edad: "+ Edad);
+                writer.WriteLine("Fecha Nacimiento: "+ Fechanac);
+                writer.WriteLine("Carrera: "+ Carrera);
+                writer.WriteLine("Matricula: "+ Matricula);
+                writer.WriteLine("\n");
+                writer.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al guardar Datos en el Archivo: RegistroAlumnos.TXT", "ERROR",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+          }
     }
 
     class Empleado : Persona
     {
         protected float sueldo;
         protected string puesto;
+        protected int dni;
+        public int DNI //CAJA DE MEMORIA MATRICULA DE TRABAJADOR
+        {
+            get { return dni; } //vamos por el valor
+                                      //de la caja de texto
+            set { dni = value; }//lo guardamos en memoria
+        }
         public float Sueldo //CAJA DE MEMORIA edad
         {
             get { return sueldo; } //vamos por el valor
@@ -83,13 +114,39 @@ namespace persona_herencia
             set { puesto = value; }//lo guardamos en memoria
         }
 
-        public Empleado(string nombre, int edad, string fechanac, string puesto, float sueldo)
+        public Empleado(string nombre, int edad, string fechanac,int dni, string puesto, float sueldo)
         {
             Nombre = nombre;
             Edad = edad;
             Fechanac = fechanac;
+            DNI = dni;
             Puesto = puesto;
             Sueldo = sueldo;
+        }
+
+        public void Guardar_info()
+        {
+            try //EXCEPCIÓN
+            {
+                string fileName =
+                    @"E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\archivostxt\RegistroEmpleado.txt";
+                // esto inserta texto en un archivo existente, si el archivo no existe lo crea
+                StreamWriter writer = File.AppendText(fileName);
+                //  writer.WriteLine("Este es un dato nuevo desde guardar");
+                writer.WriteLine("Nombre: " + Nombre);
+                writer.WriteLine("Edad: " + Edad);
+                writer.WriteLine("Fecha Nacimiento: " + Fechanac);
+                writer.WriteLine("DNI: " + DNI);
+                writer.WriteLine("Puesto: " + Puesto);
+                writer.WriteLine("Sueldo: " + Sueldo);
+                writer.WriteLine("\n");
+                writer.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al guardar Datos en el Archivo: RegistroEmpleado.TXT", "ERROR",
+                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 
@@ -97,6 +154,13 @@ namespace persona_herencia
     {
         protected float sueldo;
         protected string puesto;
+        protected int dni;
+        public int DNI //CAJA DE MEMORIA edad
+        {
+            get { return dni; } //vamos por el valor
+                                //de la caja de texto
+            set { dni = value; }//lo guardamos en memoria
+        }
         public float Sueldo //CAJA DE MEMORIA edad
         {
             get { return sueldo; } //vamos por el valor
@@ -109,13 +173,39 @@ namespace persona_herencia
                                    //de la caja de texto
             set { puesto = value; }//lo guardamos en memoria
         }
-        public Docente(string nombre, int edad, string fechanac, string puesto, float sueldo)
+        public Docente(string nombre, int edad, string fechanac, int dni, string puesto, float sueldo)
         {
             Nombre = nombre;
             Edad = edad;
             Fechanac = fechanac;
+            DNI = dni;
             Puesto = puesto;
             Sueldo = sueldo;
+        }
+
+        public void Guardar_info()
+        {
+            try //EXCEPCIÓN
+            {
+                string fileName =
+                    @"E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\archivostxt\RegistroDocente.txt";
+                // esto inserta texto en un archivo existente, si el archivo no existe lo crea
+                StreamWriter writer = File.AppendText(fileName);
+                //  writer.WriteLine("Este es un dato nuevo desde guardar");
+                writer.WriteLine("Nombre: " + Nombre);
+                writer.WriteLine("Edad: " + Edad);
+                writer.WriteLine("Fecha Nacimiento: " + Fechanac);
+                writer.WriteLine("DNI: " + DNI);
+                writer.WriteLine("Puesto: " + Puesto);
+                writer.WriteLine("Sueldo: " + Sueldo);
+                writer.WriteLine("\n");
+                writer.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al guardar Datos en el Archivo: RegistroDocente.TXT", "ERROR",
+                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
     static class Program

@@ -18,3 +18,33 @@ C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_
 C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.csproj.CoreCompileInputs.cache
 C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.exe
 C:\Users\perla\Source\Repos\TeacherPerlaHernandez\Proyecto_P2\obj\Debug\persona_herencia.pdb
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\bin\Debug\persona_herencia.exe.config
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\bin\Debug\persona_herencia.exe
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\bin\Debug\persona_herencia.pdb
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.csproj.AssemblyReference.cache
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.Form1.resources
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.Properties.Resources.resources
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.csproj.GenerateResource.cache
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.csproj.CoreCompileInputs.cache
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.exe
+C:\Users\Licenciaturas\Downloads\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.pdb
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\bin\Debug\persona_herencia.exe.config
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\bin\Debug\persona_herencia.exe
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\bin\Debug\persona_herencia.pdb
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.csproj.AssemblyReference.cache
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.Form1.resources
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.Properties.Resources.resources
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.csproj.GenerateResource.cache
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.csproj.CoreCompileInputs.cache
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.exe
+D:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.pdb
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\bin\Debug\persona_herencia.exe.config
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\bin\Debug\persona_herencia.exe
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\bin\Debug\persona_herencia.pdb
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.csproj.AssemblyReference.cache
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.Form1.resources
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.Properties.Resources.resources
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.csproj.GenerateResource.cache
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.csproj.CoreCompileInputs.cache
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.exe
+E:\Ejercicios POO\Proyecto_P2-main\Proyecto_P2-main\obj\Debug\persona_herencia.pdb
